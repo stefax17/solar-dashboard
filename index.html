@@ -30,22 +30,22 @@
 </head>
 <body>
 <h1>☀️ Solar Dashboard</h1>
-<div class="subtitle">Impianto 6.0 kWp · Lecce · Aggiornato 08/04/2026 21:00</div>
+<div class="subtitle">Impianto 6.0 kWp · Lecce · Aggiornato 09/04/2026 21:00</div>
 
 <div class="grid">
   <div class="card">
     <div class="label">Produzione oggi</div>
-    <div class="value" style="color:#f59e0b">15.8</div>
+    <div class="value" style="color:#f59e0b">16.7</div>
     <div class="sub">kWh (attesi 33.3)</div>
   </div>
   <div class="card">
     <div class="label">Performance Ratio</div>
-    <div class="value" style="color:#dc3545">48%</div>
-    <div class="sub">Media 14gg: 48%</div>
+    <div class="value" style="color:#dc3545">50%</div>
+    <div class="sub">Media 14gg: 49%</div>
   </div>
   <div class="card">
     <div class="label">Dalla rete oggi</div>
-    <div class="value" style="color:#6366f1">5.0</div>
+    <div class="value" style="color:#6366f1">2.5</div>
     <div class="sub">kWh acquistati</div>
   </div>
   <div class="card">
@@ -55,13 +55,13 @@
   </div>
   <div class="card">
     <div class="label">Batteria ora</div>
-    <div class="value" style="color:#3b82f6">52%</div>
-    <div class="sub">2026-04-08 22:50 DST</div>
+    <div class="value" style="color:#3b82f6">79%</div>
+    <div class="sub">2026-04-09 22:50 DST</div>
   </div>
   <div class="card">
     <div class="label">Miglior giorno</div>
-    <div class="value" style="color:#f59e0b">15.8</div>
-    <div class="sub">kWh il 04-08</div>
+    <div class="value" style="color:#f59e0b">16.7</div>
+    <div class="sub">kWh il 04-09</div>
   </div>
 </div>
 
@@ -83,11 +83,11 @@
 <div class="footer">Solar Dashboard · aggiornata automaticamente ogni sera alle 22:00</div>
 
 <script>
-const dates = ["04-08"];
-const prod  = [15.85];
-const exp   = [33.26];
-const pr    = [47.7];
-const prColors = ["#dc3545"];
+const dates = ["04-08", "04-09"];
+const prod  = [15.85, 16.69];
+const exp   = [33.26, 33.26];
+const pr    = [47.7, 50.2];
+const prColors = ["#dc3545", "#dc3545"];
 
 new Chart(document.getElementById('chartProd'), {
   type: 'bar',
