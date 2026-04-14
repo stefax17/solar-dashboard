@@ -30,7 +30,7 @@
 </head>
 <body>
 <h1>☀️ Solar Dashboard</h1>
-<div class="subtitle">Impianto 6.0 kWp · Lecce · Aggiornato 14/04/2026 15:39</div>
+<div class="subtitle">Impianto 6.0 kWp · Lecce · Aggiornato 14/04/2026 15:51</div>
 
 <div class="grid">
   <div class="card">
@@ -41,7 +41,7 @@
   <div class="card">
     <div class="label">Performance Ratio</div>
     <div class="value" style="color:#dc3545">54%</div>
-    <div class="sub">Media 14gg: 38%</div>
+    <div class="sub">Media 14gg: 45%</div>
   </div>
   <div class="card">
     <div class="label">Dalla rete oggi</div>
@@ -50,7 +50,7 @@
   </div>
   <div class="card">
     <div class="label">Autosufficienza</div>
-    <div class="value" style="color:#10b981">147%</div>
+    <div class="value" style="color:#10b981">146%</div>
     <div class="sub">energia da pannelli</div>
   </div>
   <div class="card">
@@ -84,10 +84,10 @@
 
 <script>
 const dates = ["04-08", "04-09", "04-10", "04-11", "04-12", "04-13", "04-14"];
-const prod  = [15.85, 16.69, 12.11, 10.49, 3.64, 12.84, 14.99];
-const exp   = [33.26, 33.26, 33.26, 33.26, 33.26, 33.26, 27.6];
-const pr    = [47.7, 50.2, 36.4, 31.5, 10.9, 38.6, 54.3];
-const prColors = ["#dc3545", "#dc3545", "#dc3545", "#dc3545", "#dc3545", "#dc3545", "#dc3545"];
+const prod  = [15.85, 16.69, 12.11, 10.49, 3.64, 12.84, 15.04];
+const exp   = [27.79, 28.54, 26.54, 26.69, 25.63, 28.09, 27.6];
+const pr    = [57.0, 58.5, 45.6, 39.3, 14.2, 45.7, 54.5];
+const prColors = ["#ffc107", "#ffc107", "#dc3545", "#dc3545", "#dc3545", "#dc3545", "#dc3545"];
 
 new Chart(document.getElementById('chartProd'), {
   type: 'bar',
