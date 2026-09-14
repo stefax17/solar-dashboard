@@ -30,33 +30,33 @@
 </head>
 <body>
 <h1>☀️ Solar Dashboard</h1>
-<div class="subtitle">Impianto 6.0 kWp · Lecce · Aggiornato 13/09/2026 21:00</div>
+<div class="subtitle">Impianto 6.0 kWp · Lecce · Aggiornato 14/09/2026 21:00</div>
 
 <div class="grid">
   <div class="card">
     <div class="label">Produzione oggi</div>
-    <div class="value" style="color:#f59e0b">13.3</div>
+    <div class="value" style="color:#f59e0b">10.3</div>
     <div class="sub">kWh (attesi 25.1)</div>
   </div>
   <div class="card">
     <div class="label">Performance Ratio</div>
-    <div class="value" style="color:#dc3545">53%</div>
-    <div class="sub">corretto: <b>100%</b> · 7h clip</div>
+    <div class="value" style="color:#dc3545">41%</div>
+    <div class="sub">corretto: <b>78%</b> · 7h clip</div>
   </div>
   <div class="card">
     <div class="label">Dalla rete oggi</div>
-    <div class="value" style="color:#6366f1">1.4</div>
+    <div class="value" style="color:#6366f1">0.4</div>
     <div class="sub">kWh acquistati</div>
   </div>
   <div class="card">
     <div class="label">Autosufficienza</div>
-    <div class="value" style="color:#10b981">190%</div>
+    <div class="value" style="color:#10b981">78%</div>
     <div class="sub">energia da pannelli</div>
   </div>
   <div class="card">
     <div class="label">Batteria ora</div>
-    <div class="value" style="color:#3b82f6">84%</div>
-    <div class="sub">2026-09-13 22:50 DST</div>
+    <div class="value" style="color:#3b82f6">60%</div>
+    <div class="sub">2026-09-14 22:50 DST</div>
   </div>
   <div class="card">
     <div class="label">Miglior giorno</div>
@@ -84,13 +84,13 @@
 <div class="footer">Solar Dashboard · aggiornata automaticamente ogni sera alle 22:00</div>
 
 <script>
-const dates = ["08-31", "09-01", "09-02", "09-03", "09-04", "09-05", "09-06", "09-07", "09-08", "09-09", "09-10", "09-11", "09-12", "09-13"];
-const prod  = [14.87, 24.26, 27.51, 29.44, 25.21, 18.71, 20.58, 24.77, 23.34, 21.34, 25.36, 21.6, 10.99, 13.3];
-const exp   = [25.0, 25.51, 28.12, 27.47, 27.91, 27.96, 27.83, 27.57, 25.03, 23.98, 25.16, 22.08, 15.32, 25.07];
-const pr    = [59.5, 95.1, 97.8, 107.2, 90.3, 66.9, 73.9, 89.8, 93.2, 89.0, 100.8, 97.8, 71.7, 53.1];
-const prColors = ["#ffc107", "#27a844", "#27a844", "#27a844", "#27a844", "#ffc107", "#ffc107", "#27a844", "#27a844", "#27a844", "#27a844", "#27a844", "#ffc107", "#dc3545"];
+const dates = ["09-01", "09-02", "09-03", "09-04", "09-05", "09-06", "09-07", "09-08", "09-09", "09-10", "09-11", "09-12", "09-13", "09-14"];
+const prod  = [24.26, 27.51, 29.44, 25.21, 18.71, 20.58, 24.77, 23.34, 21.34, 25.36, 21.6, 10.99, 13.26, 10.27];
+const exp   = [25.51, 28.12, 27.47, 27.91, 27.96, 27.83, 27.57, 25.03, 23.98, 25.16, 22.08, 15.32, 25.07, 25.09];
+const pr    = [95.1, 97.8, 107.2, 90.3, 66.9, 73.9, 89.8, 93.2, 89.0, 100.8, 97.8, 71.7, 52.9, 40.9];
+const prColors = ["#27a844", "#27a844", "#27a844", "#27a844", "#ffc107", "#ffc107", "#27a844", "#27a844", "#27a844", "#27a844", "#27a844", "#ffc107", "#dc3545", "#dc3545"];
 
-const prodCorretta = [14.87, 24.26, 27.74, 27.47, 26.2, 25.4, 24.35, 26.26, 23.45, 22.3, 25.16, 21.6, 10.99, 25.07];
+const prodCorretta = [24.26, 27.74, 27.47, 26.2, 25.4, 24.35, 26.26, 23.45, 22.3, 25.16, 21.6, 10.99, 25.07, 19.64];
 new Chart(document.getElementById('chartProd'), {
   type: 'bar',
   data: {
@@ -132,7 +132,7 @@ new Chart(document.getElementById('chartProd'), {
   }
 });
 
-const prAdj = [59.5, 95.1, 98.6, 100, 93.9, 90.9, 87.5, 95.3, 93.7, 93.0, 100, 97.8, 71.7, 100];
+const prAdj = [95.1, 98.6, 100, 93.9, 90.9, 87.5, 95.3, 93.7, 93.0, 100, 97.8, 71.7, 100, 78.3];
 const prAdjColors = prAdj.map(v => v >= 75 ? '#27a844' : v >= 55 ? '#ffc107' : '#dc3545');
 new Chart(document.getElementById('chartPR'), {
   type: 'bar',
